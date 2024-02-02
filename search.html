@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Country</title>
+    <link rel = "stylesheet" href="style2.css">
+</head>
+<header>
+    <h2 class="logo">logo</h2>
+    <nav class ="navigation">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="search.html" onclick="showSearch()">Search</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+<body>
+    <div class = "parent-container">
+        <div class = "container" id = "search">
+            <form id ="country-form">
+                <input type = "text" placeholder="Find Country" name = "q" id = "country-input">
+                <button type = "submit" class = "btn2"><ion-icon name="search"></ion-icon></button>
+            </form>
+        </div>
+        <div id = "country-info"></div>
+    </div>
+    <script src = "script2.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>

@@ -1,0 +1,136 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url(images/pngtree-travel-around-the-world-background-picture-image_2253108.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background:flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    /* Look up what this mean */
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left:0;
+    bottom:-6px;
+    width:100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin:right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* .navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 1.1em;
+    color:#fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+} */
+
+/* .navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #161616;
+
+} */
+
+
+.parent-container{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 1000px;
+
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar{
+    width:100%;
+    max-width: 700px;
+    background: orange;
+    display:flex;
+    align-items: center;
+    border-radius: 100px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search-bar input {
+    background: transparent;
+    flex:1;
+    border:0;
+    outline:none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color:orange
+}
+
+::placeholder{
+    color: #fff;
+}
+
+.search-bar button{
+    width: 25px;
+}
+.search-bar .btn2{
+    border:0;
+    border-radius: 60px;
+    width: 60px;
+    height:60px;
+    background: lightsalmon;
+    cursor:pointer;
+}
